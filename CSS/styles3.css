@@ -1,0 +1,97 @@
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-color: #00ADE6;
+    color: white;
+    padding: 5px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;   
+}
+
+/* => Style du texte appliqué à .nombre À L’INTÉRIEUR de .logo :
+   - Taille de police plus grande (22px)
+   - Positionné absolument par rapport à .logo 
+     => Se positionne par rapport à son premier parent position: relative.
+   - Décalé de 12px à partir du haut */
+.logo .nombre {              
+    font-size: 22px;
+    position: absolute; 
+    top: 12px;
+}
+
+.site-nav-bar{
+    background-color: #00A7E3;
+}
+
+.nav .nav-item a {
+    color: white;         /* ✅ Couleur du texte : blanc 
+                             => pour que les liens soient bien visibles, surtout sur un fond sombre (ex : barre de navigation) */
+
+    font-size: 14px;      /* ✅ Taille de la police du lien : 14 pixels 
+                             => taille réduite mais lisible, souvent utilisée pour des éléments de menu */
+}
+
+.bleuclair {
+    background-color: #4DC2EB;  /* ✅ Couleur de fond bleu clair (code hexadécimal) */
+
+    padding: 0px 6px;           /* ✅ Espace intérieur :
+                                    - 0px en haut et en bas
+                                    - 6px à gauche et à droite
+                                    => le texte respire horizontalement */
+
+    margin: 0.5rem 0.5rem;      /* ✅ Espace extérieur autour de l'élément :
+                                    - 0.5rem (≈8px) en haut, bas, gauche et droite
+                                    => évite que les blocs se collent entre eux */
+
+    border-radius: 5px;         /* ✅ Coins arrondis de 5 pixels 
+                                    => donne un look plus doux et moderne */
+}
+
+.site-info{
+    background-color: #000145;
+    color: white;
+    padding: 5px 0px;
+
+}
+
+.info-continu-titre{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    font-size: 22px;
+}
+
+.info-continu{
+    background-color: #EEEEEE;
+}
+
+.info-heure{
+    background-color: #00A7E3;
+    color: white;
+    padding: 5px;
+    font-size: 16;
+}
+
+.social-icon {
+    margin-right: 20px;
+}
+
+.categorie {
+    color: grey;              /* ✅ couleur du texte */
+    font-family: Arial, sans-serif;  /* ✅ police : Arial (et police de secours) */
+    font-size: 16px;          /* ✅ taille de police */
+    text-decoration: none;    /* (optionnel) retire le soulignement du lien */
+}
+
+.categorie:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+/* .logo .nombre → Sélecteur descendant (parent → enfant, enfant "nombre" du parent "logo") 
+➡️ Applique ces styles à tous les éléments de la page qui ont la classe .nombre, peu importe où ils se trouvent.
+➡️ Si on met juste .nombre, le style sera appliqué à tous les .nombre de ta page (même dans un article, un tableau, etc.).*/
